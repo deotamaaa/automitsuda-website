@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+
+// Fonts Variable
+$font-stack: 'Poppins',
+sans-serif;
+
+// Colors Variable
+$bg-color: rgba(28, 161, 203, 0.5);
+$color-primary: #30B9E4;
+$color-secondary: #ffffff;
+
+
+
+body {
+    font-family: $font-stack;
+}
+
+a {
+    color: $color-primary;
+}
+
+// Hero Section Styles
+.hero-section {
+    background-color: $bg-color;
+    height: 80vh;
+}
