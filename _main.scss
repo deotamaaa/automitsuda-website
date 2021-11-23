@@ -15,24 +15,42 @@ $btn-color: #30B9E4;
 
 
 body {
-    font-family: $font-stack;
+  font-family: $font-stack;
 }
 
 
 // Hero Section Styles
 .hero-section {
-    background-color: $bg-color;
-    height: 80vh;
+  background-color: $bg-color;
+  height: 80vh;
 
-    // Custom Styling Buat Navigasi
-    .navbar-dark .navbar-nav .nav-link {
-        color: $color-secondary;
 
-        &:hover {
-            color: $color-primary;
-        }
+  // Custom Styling Buat Navigasi
+  #navbar {
+    margin-left: 6rem !important;
+    margin-right: 6rem !important;
+  }
+
+  #navbar .navbar-brand {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $color-secondary;
+  }
+
+  .navbar-nav {
+    li {
+      margin-right: 1rem;
     }
+  }
 
-    // End Custom Styling Buat Navigasi
+  .navbar-dark .navbar-nav .nav-link {
+    color: $color-secondary;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  // End Custom Styling Buat Navigasi
 
 }
