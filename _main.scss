@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
 
 // Fonts Variable
-$font-stack: "Poppins",
-sans-serif;
+$font-stack: "Poppins", sans-serif;
 
 // Colors Variable
 $bg-color: #05a1cb;
 $color-primary: #30b9e4;
 $color-secondary: #ffffff;
+$color-third: #92d2e6;
 
 // Buttons Color
 $btn-color: #30b9e4;
@@ -37,7 +37,6 @@ body {
     margin-right: 15px;
   }
 
-
   .navbar-dark .navbar-nav .nav-link {
     color: $color-secondary;
 
@@ -57,10 +56,9 @@ body {
     .card {
       width: 100px;
       height: 100px;
-      // background-color: $bg-color;
       margin-left: 150px;
       margin-bottom: 18px;
-      border: none;
+      // border: none;
 
       img {
         width: 100%;
@@ -73,23 +71,75 @@ body {
       font-size: 24px;
       line-height: 36px;
     }
-
     p {
       margin-top: 18px;
       font-size: 18px;
       line-height: 27px;
     }
 
-    .private_text {
-      width: 50%;
-      margin-left: 100px;
+    // .private_text {
+    //   width: 50%;
+    //   margin-left: 100px;
+    // }
+
+    // .flex_schedule {
+    //   width: 60%;
+    //   margin-left: 100px;
+    // }
+  }
+}
+// End Styling Strength Section
+
+// About Section
+.about_container {
+  margin-top: 73px;
+  .about_section {
+    background-color: $color-third;
+    margin: 0 95px;
+    .mask_section {
+      .mask_image {
+        margin: 92px 62px 88px 90px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
     }
 
-    .flex_schedule {
-      width: 60%;
-      margin-left: 100px;
+    .about_text {
+      margin-top: 92px;
+      color: white;
+      p {
+        margin: 38px 0 40px 0;
+        font-size: 18px;
+        line-height: 27px;
+      }
+      h1 {
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 72px;
+      }
+    }
+
+    .button_cta {
+      button {
+        width: 214px;
+        height: 64px;
+        color: white;
+        border: none;
+        outline: none;
+        font-size: 24px;
+      }
+      .show_class {
+        background-color: $btn-color;
+        :hover {
+          background-color: red;
+        }
+      }
+      .contact_us {
+        border: 1px solid $color-secondary;
+        background-color: $color-third;
+      }
     }
   }
 }
-
-// End Styling Strength Section
