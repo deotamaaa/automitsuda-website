@@ -56,10 +56,9 @@ body {
     .card {
       width: 100px;
       height: 100px;
-      // background-color: $bg-color;
       margin-left: 150px;
       margin-bottom: 18px;
-      border: none;
+      // border: none;
 
       img {
         width: 100%;
@@ -72,28 +71,27 @@ body {
       font-size: 24px;
       line-height: 36px;
     }
-
     p {
       margin-top: 18px;
       font-size: 18px;
       line-height: 27px;
     }
 
-    .private_text {
-      width: 50%;
-      margin-left: 100px;
-    }
+    // .private_text {
+    //   width: 50%;
+    //   margin-left: 100px;
+    // }
 
-    .flex_schedule {
-      width: 60%;
-      margin-left: 100px;
-    }
+    // .flex_schedule {
+    //   width: 60%;
+    //   margin-left: 100px;
+    // }
   }
 }
 // End Styling Strength Section
 
 // About Section
-.container-fluid {
+.about_container {
   margin-top: 73px;
   .about_section {
     background-color: $color-third;
@@ -134,6 +132,9 @@ body {
       }
       .show_class {
         background-color: $btn-color;
+        :hover {
+          background-color: red;
+        }
       }
       .contact_us {
         border: 1px solid $color-secondary;
