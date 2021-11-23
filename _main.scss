@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
 
 // Fonts Variable
-$font-stack: "Poppins", sans-serif;
+$font-stack: "Poppins",
+sans-serif;
 
 // Colors Variable
 $bg-color: #05a1cb;
@@ -71,6 +72,7 @@ body {
       font-size: 24px;
       line-height: 36px;
     }
+
     p {
       margin-top: 18px;
       font-size: 18px;
@@ -88,17 +90,21 @@ body {
     // }
   }
 }
+
 // End Styling Strength Section
 
 // About Section
 .about_container {
   margin-top: 73px;
+
   .about_section {
     background-color: $color-third;
     margin: 0 95px;
+
     .mask_section {
       .mask_image {
         margin: 92px 62px 88px 90px;
+
         img {
           width: 100%;
           height: 100%;
@@ -109,11 +115,13 @@ body {
     .about_text {
       margin-top: 92px;
       color: white;
+
       p {
         margin: 38px 0 40px 0;
         font-size: 18px;
         line-height: 27px;
       }
+
       h1 {
         font-weight: bold;
         font-size: 48px;
@@ -130,16 +138,66 @@ body {
         outline: none;
         font-size: 24px;
       }
+
       .show_class {
         background-color: $btn-color;
+
         :hover {
           background-color: red;
         }
       }
+
       .contact_us {
         border: 1px solid $color-secondary;
         background-color: $color-third;
       }
     }
+  }
+}
+
+
+// End About Section
+
+// Kursus Section
+.kursus-section {
+  .section-title-kursus {
+    margin-top: 6.25rem;
+    margin-bottom: 6.25rem;
+    font-weight: 800;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .kursus-content {
+    text-align: center;
+
+    h3 {
+      font-weight: 600;
+      font-size: 2.25rem;
+    }
+
+  }
+
+  table {
+    width: 50%;
+    text-align: center;
+  }
+
+  tr {
+    height: 1.5rem;
+  }
+
+  td {
+    width: 20%;
+    height: 21px;
+  }
+
+  .modal-body,
+  .modal-footer {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
   }
 }
