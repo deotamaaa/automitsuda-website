@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
 
 // Fonts Variable
-$font-stack: "Poppins", sans-serif;
+$font-stack: "Poppins",
+sans-serif;
 
 // Colors Variable
 $bg-color: #05a1cb;
@@ -21,6 +22,22 @@ body {
   height: 80vh;
 
   // Custom Styling Buat Navigasi
+  #navbar {
+    margin-left: 6rem !important;
+    margin-right: 6rem !important;
+
+    .navbar-brand {
+      font-size: 2rem;
+      font-weight: 700;
+      color: $color-secondary;
+    }
+  }
+
+  .nav-link {
+    margin-right: 15px;
+  }
+
+
   .navbar-dark .navbar-nav .nav-link {
     color: $color-secondary;
 
@@ -35,6 +52,7 @@ body {
 // Strength Section
 .strength_section {
   padding-top: 100px;
+
   .course_section {
     .card {
       width: 100px;
@@ -43,29 +61,35 @@ body {
       margin-left: 150px;
       margin-bottom: 18px;
       border: none;
+
       img {
         width: 100%;
         height: 100%;
       }
     }
+
     h4 {
       font-weight: 600;
       font-size: 24px;
       line-height: 36px;
     }
+
     p {
       margin-top: 18px;
       font-size: 18px;
       line-height: 27px;
     }
+
     .private_text {
       width: 50%;
       margin-left: 100px;
     }
+
     .flex_schedule {
       width: 60%;
       margin-left: 100px;
     }
   }
 }
+
 // End Styling Strength Section
