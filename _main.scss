@@ -5,9 +5,12 @@ $font-stack: 'Poppins',
 sans-serif;
 
 // Colors Variable
-$bg-color: rgba(28, 161, 203, 0.5);
+$bg-color: #05A1CB;
 $color-primary: #30B9E4;
 $color-secondary: #ffffff;
+
+// Buttons Color
+$btn-color: #30B9E4;
 
 
 
@@ -15,12 +18,21 @@ body {
     font-family: $font-stack;
 }
 
-a {
-    color: $color-primary;
-}
 
 // Hero Section Styles
 .hero-section {
     background-color: $bg-color;
     height: 80vh;
+
+    // Custom Styling Buat Navigasi
+    .navbar-dark .navbar-nav .nav-link {
+        color: $color-secondary;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+
+    // End Custom Styling Buat Navigasi
+
 }
