@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
 
 // Fonts Variable
-$font-stack: "Poppins", sans-serif;
+$font-stack: "Poppins",
+sans-serif;
 
 // Colors Variable
 $bg-color: #05a1cb;
@@ -167,11 +168,16 @@ body {
   }
 
   .kursus-content {
-    text-align: center;
+
 
     h3 {
       font-weight: 600;
       font-size: 2.25rem;
+    }
+
+    p {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
     }
   }
 
@@ -215,17 +221,20 @@ body {
 
   .testimony_text {
     margin-bottom: 98px;
+
     h1 {
       font-weight: bold;
       font-size: 48px;
       line-height: 72px;
     }
+
     p {
       font-weight: 200;
       font-size: 24px;
       line-height: 36px;
     }
   }
+
   .card {
     background-color: $bg-color;
     width: 309px;
@@ -237,14 +246,17 @@ body {
   .stars_group {
     margin: 18px 0 0 29px;
     color: white;
+
     img {
       margin-right: 5px;
     }
+
     p {
       margin-top: 10px;
       font-size: 18px;
     }
   }
+
   .testimony_picture {
     display: flex;
     justify-content: center;
@@ -260,15 +272,18 @@ body {
       bottom: 0;
       right: 0;
     }
+
     .testimony_review {
       position: absolute;
       left: 100px;
       top: 215px;
       bottom: 0;
       right: 0;
+
       p {
         font-size: 18px;
       }
+
       p:last-child {
         font-size: 12px;
       }
@@ -339,3 +354,5 @@ body {
 }
 
 //End Of Footer Section
+
+//End Of Testimony Section Style
