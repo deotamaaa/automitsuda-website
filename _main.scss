@@ -275,5 +275,67 @@ body {
     }
   }
 }
-
 //End Of Testimony Section Style
+
+// Footer Section
+
+.footer_section {
+  background-color: $bg-color;
+  margin-top: 100px;
+  color: white;
+
+  .footer_content {
+    padding-top: 62px;
+
+    .footer_title {
+      h1 {
+        font-size: 36px;
+        font-style: italic;
+        font-weight: bold;
+      }
+      p {
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 300;
+      }
+    }
+
+    .footer_navigasi {
+      h3 {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 27px;
+        li {
+          list-style: none;
+          padding: 10px 0;
+        }
+      }
+    }
+    .footer_contact {
+      h3 {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 27px;
+      }
+
+      .logo_contact {
+        button {
+          border: none;
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+//End Of Footer Section
