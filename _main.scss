@@ -231,6 +231,7 @@ body {
     width: 309px;
     height: 301px;
     border-radius: 10px;
+    margin: 0 60px;
   }
 
   .stars_group {
@@ -241,34 +242,35 @@ body {
     }
     p {
       margin-top: 10px;
+      font-size: 18px;
     }
+  }
+  .testimony_picture {
+    display: flex;
+    justify-content: center;
+    color: white;
 
-    .testimony_picture {
-      display: flex;
-      justify-content: center;
-
-      img {
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-        position: absolute;
-        top: 225px;
-        left: 10px;
-        bottom: 0;
-        right: 0;
+    img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      position: absolute;
+      top: 225px;
+      left: 10px;
+      bottom: 0;
+      right: 0;
+    }
+    .testimony_review {
+      position: absolute;
+      left: 100px;
+      top: 215px;
+      bottom: 0;
+      right: 0;
+      p {
+        font-size: 18px;
       }
-      .testimony_review {
-        position: absolute;
-        left: 100px;
-        top: 215px;
-        bottom: 0;
-        right: 0;
-        p {
-          font-size: 18px;
-        }
-        p:last-child {
-          font-size: 12px;
-        }
+      p:last-child {
+        font-size: 12px;
       }
     }
   }
