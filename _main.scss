@@ -53,10 +53,12 @@ body {
 
   // Custom Styling Buat Navigasi
   #navbar {
-    margin-left: 6rem !important;
-    margin-right: 6rem !important;
 
     .navbar-brand {
+      @media screen and (max-width: 576px) {
+        font-size: 1.5rem;
+      }
+
       font-size: 2rem;
       font-weight: 700;
       color: $color-secondary;
@@ -82,6 +84,11 @@ body {
   }
 
   .hero-content {
+    @media screen and (max-width: 576px) {
+      display: flex;
+      flex-direction: column;
+    }
+
     h1 {
       font-size: 4rem;
 
@@ -99,17 +106,13 @@ body {
         font-size: 1rem;
         text-align: center;
         line-height: 1.5;
+
       }
     }
-
-    button {
-      @media (max-width: 576px) {}
-    }
-
   }
-
-  // End Custom Styling Buat Navigasi
 }
+
+// End Custom Styling Buat Navigasi
 
 // Strength Section
 .strength_section {
