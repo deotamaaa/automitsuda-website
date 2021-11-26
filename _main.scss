@@ -11,10 +11,39 @@ $color-secondary: #ffffff;
 $color-third: #92d2e6;
 
 // Buttons Color
+@mixin primary-btn($color-primary) {
+  background: $color-primary;
+
+  &:hover {
+    background: darken($color-primary, 8%);
+    transition: all 0.3s ease;
+  }
+
+  &:active {
+    background: darken($color-primary, 25%);
+  }
+}
+
 $btn-color: #30b9e4;
 
 body {
   font-family: $font-stack;
+}
+
+.btn {
+  color: white;
+  text-decoration: none;
+  padding: 15px 45px;
+  border-radius: 4px;
+  font-size: 1rem;
+  filter: drop-shadow(2px 2px 4px rgba(black, 0.5));
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  transition: all 0.3s ease;
 }
 
 // Hero Section Styles
@@ -32,6 +61,12 @@ body {
       font-weight: 700;
       color: $color-secondary;
     }
+
+    .navbar-toggler {
+      @media (max-width: 576px) {
+        margin: auto;
+      }
+    }
   }
 
   .nav-link {
@@ -46,12 +81,40 @@ body {
     }
   }
 
+  .hero-content {
+    h1 {
+      font-size: 4rem;
+
+      @media (max-width: 576px) {
+        font-size: 2rem;
+        text-align: center;
+        line-height: 1.5;
+      }
+    }
+
+    p {
+      font-size: 1.5rem;
+
+      @media (max-width: 576px) {
+        font-size: 1rem;
+        text-align: center;
+        line-height: 1.5;
+      }
+    }
+
+    button {
+      @media (max-width: 576px) {}
+    }
+
+  }
+
   // End Custom Styling Buat Navigasi
 }
 
 // Strength Section
 .strength_section {
-  padding-top: 100px;
+  margin-top: 6.25rem;
+  margin-bottom: 6.25rem;
 
   .course_section {
     .card {
@@ -79,15 +142,6 @@ body {
       line-height: 27px;
     }
 
-    // .private_text {
-    //   width: 50%;
-    //   margin-left: 100px;
-    // }
-
-    // .flex_schedule {
-    //   width: 60%;
-    //   margin-left: 100px;
-    // }
   }
 }
 
@@ -95,7 +149,6 @@ body {
 
 // About Section
 .about_container {
-  margin-top: 73px;
 
   .about_section {
     background-color: $color-third;
@@ -107,50 +160,28 @@ body {
 
         img {
           width: 100%;
-          height: 100%;
+          max-width: 400px;
+          height: auto;
         }
       }
+    }
+
+    h1 {
+      color: $color-secondary;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 72px;
     }
 
     .about_text {
-      margin-top: 92px;
       color: white;
 
       p {
-        margin: 38px 0 40px 0;
-        font-size: 18px;
-        line-height: 27px;
+        margin: 25px 90px 40px 0;
+        word-wrap: break-word;
+        font-size: 1rem;
       }
 
-      h1 {
-        font-weight: bold;
-        font-size: 48px;
-        line-height: 72px;
-      }
-    }
-
-    .button_cta {
-      button {
-        width: 214px;
-        height: 64px;
-        color: white;
-        border: none;
-        outline: none;
-        font-size: 24px;
-      }
-
-      .show_class {
-        background-color: $btn-color;
-
-        :hover {
-          background-color: red;
-        }
-      }
-
-      .contact_us {
-        border: 1px solid $color-secondary;
-        background-color: $color-third;
-      }
     }
   }
 }
@@ -168,7 +199,11 @@ body {
   }
 
   .kursus-content {
+    padding: 88px 105px;
 
+    button {
+      align-self: start;
+    }
 
     h3 {
       font-weight: 600;
@@ -197,11 +232,57 @@ body {
 
   .modal-body,
   .modal-footer {
+    p {
+      margin-bottom: 10px;
+      margin-top: 0;
+    }
+
+    button {
+      align-self: center;
+    }
+
     position: relative;
     flex: 1 1 auto;
     padding: 1rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+  }
+}
+
+// Daftar Section
+.daftar-section {
+  .heading-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .section-title-daftar {
+      margin-top: 6.25rem;
+      font-weight: 700;
+      font-size: 3rem;
+    }
+
+    .section-subtitle-daftar {
+      margin-bottom: 2rem;
+      font-weight: 400;
+    }
+  }
+
+  .btn-wa {
+    background-color: #2ecc71;
+    border: none;
+
+    &:hover {
+      background: darken(#2ecc71, 8%);
+      transition: all 0.3s ease;
+    }
+
+    &:active {
+      background: darken(#2ecc71, 25%);
+    }
   }
 }
 
@@ -213,83 +294,70 @@ body {
   .card_section {
     display: flex;
     flex-direction: row;
-
-    .group_a {
-      margin-top: 22px;
-    }
   }
 
   .testimony_text {
-    margin-bottom: 98px;
+    margin-bottom: 2rem;
 
     h1 {
       font-weight: bold;
-      font-size: 48px;
-      line-height: 72px;
+      font-size: 3rem;
     }
 
     p {
       font-weight: 200;
-      font-size: 24px;
-      line-height: 36px;
+      font-size: 1.5rem;
     }
   }
 
   .card {
+    display: flex;
+    justify-content: space-around;
     background-color: $bg-color;
-    width: 309px;
-    height: 301px;
+    width: 310px;
+    height: 300px;
     border-radius: 10px;
-    margin: 0 60px;
-  }
-
-  .stars_group {
-    margin: 18px 0 0 29px;
+    margin: auto;
+    padding: 1rem 1.875rem;
     color: white;
 
-    img {
-      margin-right: 5px;
+    .stars_group {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      color: white;
+
+      .fa-star {
+        font-size: 1.5rem;
+        margin-right: 1rem;
+      }
     }
 
     p {
-      margin-top: 10px;
-      font-size: 18px;
+      font-size: 0.75rem;
     }
   }
 
+
   .testimony_picture {
     display: flex;
-    justify-content: center;
-    color: white;
 
     img {
       width: 70px;
       height: 70px;
       border-radius: 50%;
-      position: absolute;
-      top: 225px;
-      left: 10px;
-      bottom: 0;
-      right: 0;
     }
 
     .testimony_review {
-      position: absolute;
-      left: 100px;
-      top: 215px;
-      bottom: 0;
-      right: 0;
+      margin-left: 1rem;
 
-      p {
-        font-size: 18px;
-      }
-
-      p:last-child {
-        font-size: 12px;
+      P {
+        font-size: 13px;
       }
     }
   }
 }
+
 //End Of Testimony Section Style
 
 // Footer Section
@@ -308,6 +376,7 @@ body {
         font-style: italic;
         font-weight: bold;
       }
+
       p {
         font-size: 18px;
         line-height: 27px;
@@ -321,23 +390,27 @@ body {
         font-size: 24px;
         line-height: 36px;
       }
+
       a {
         color: white;
         text-decoration: none;
         font-size: 18px;
         line-height: 27px;
+
         li {
           list-style: none;
           padding: 10px 0;
         }
       }
     }
+
     .footer_contact {
       h3 {
         font-weight: 600;
         font-size: 24px;
         line-height: 36px;
       }
+
       p {
         font-size: 18px;
         line-height: 27px;
@@ -354,5 +427,3 @@ body {
 }
 
 //End Of Footer Section
-
-//End Of Testimony Section Style
