@@ -14,11 +14,13 @@
   <link rel="stylesheet"
         href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-        crossorigin="anonymous">
+        crossorigin="anonymous" />
   <link rel="stylesheet"
-        href="owlcarousel/owl.carousel.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet"
-        href="owlcarousel/owl.theme.default.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <link rel="stylesheet"
         href="/css/style.css" />
   <title>Belajar Kursus Mobil dan Pembuatan SIM A SIM C | Auto Mitsuda</title>
@@ -324,8 +326,9 @@
       <p>Kata mereka yang telah kursus di Auto Mitsuda</p>
     </div>
     <div class="row">
-      <div class="card_section owl-carousel">
-        <div class="col-4">
+      <div class="card_section owl-carousel owl-theme"
+           id="owl-carousel">
+        <div class="col-4 item">
           <div class="card">
             <div class="stars_group">
               <i class="fas fa-star"></i>
@@ -348,7 +351,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-4 item">
           <div class="card">
             <div class="stars_group">
               <i class="fas fa-star"></i>
@@ -362,7 +365,7 @@
               recommended buat kalian yang mau belajar.
             </p>
             <div class="testimony_picture">
-              <img src="./assets/man.png"
+              <img src="./assets/woman.png"
                    alt="" />
               <div class="testimony_review">
                 <p>Salsabiela T.</p>
@@ -371,7 +374,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-4 item">
           <div class="card">
             <div class="stars_group">
               <i class="fas fa-star"></i>
@@ -388,6 +391,50 @@
                    alt="" />
               <div class="testimony_review">
                 <p>Lare Jawi</p>
+                <p>Based On Google Review</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 item">
+          <div class="card">
+            <div class="stars_group">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+              Tempat belajar mengemudi terbaik.
+            </p>
+            <div class="testimony_picture">
+              <img src="./assets/woman.png"
+                   alt="" />
+              <div class="testimony_review">
+                <p>Yuni Susilawati</p>
+                <p>Based On Google Review</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 item">
+          <div class="card">
+            <div class="stars_group">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+              Tempat belajar stir mobil yang mantap deh pokoknya.
+            </p>
+            <div class="testimony_picture">
+              <img src="./assets/man.png"
+                   alt="" />
+              <div class="testimony_review">
+                <p>Alif Furqon</p>
                 <p>Based On Google Review</p>
               </div>
             </div>
@@ -480,14 +527,33 @@
 
   <!-- Footer Section-->
   <!-- Optional JavaScript -->
+  <script>
+    $('#owl-carousel').owlCarousel({
+      loop: true,
+      margin: 30,
+      dots: true,
+      nav: true,
+      items: 2,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
           integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
           crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
           integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
           crossorigin="anonymous"></script>
-  <script src="jquery.min.js"></script>
-  <script src="owlcarousel/owl.carousel.min.js"></script>
 </body>
 
 </html>
