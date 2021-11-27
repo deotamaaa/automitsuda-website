@@ -143,33 +143,30 @@
   <!-- About Section -->
   <section class="container-fluid about_container"
            id="tentang-kami">
-    <div class="about_section">
-      <div class="row align-items-center">
-        <div class="col-4 mask_section">
-          <div class="mask_image">
-            <img src="./assets/Mask Group.png"
-                 alt=""
-                 class="img-fluid" />
-          </div>
+    <div class="about_section row">
+      <div class="col-4 mask_section">
+        <img src="./assets/Mask Group.png"
+             alt=""
+             class="img-fluid" />
+      </div>
+      <div class="col-8">
+        <h1>Tentang Kami</h1>
+        <div class="about_text">
+          <p>
+            5 tahun semenjak didirikan pada tahun 2016, Auto Mitsuda telah memberikan pelayanan kursus mobil bagi
+            masyarakat yang ingin memperlancar maupun baru belajar dalam mengendarai mobil.
+          </p>
+          <p>
+            Sebanyak 100+ siswa yang mendaftar setiap tahunnya menunjukan kredibilitas pelayanan yang diberikan.
+          </p>
+          <p>Saat ini Auto Mitsuda memiliki 5 Instruktur berpengalaman serta bersertifikasi yang siap menemani dalam
+            setiap sesi pembelajaran. sehingga kami menyediakan pelayanan yang berkualitas dengan harga yang
+            terjangkau.
+          </p>
         </div>
-        <div class="col-8">
-          <h1>Tentang Kami</h1>
-          <div class="about_text">
-            <p>
-              5 tahun semenjak didirikan pada tahun 2016, Auto Mitsuda telah memberikan pelayanan kursus mobil bagi
-              masyarakat yang ingin memperlancar maupun baru belajar dalam mengendarai mobil.
-            </p>
-            <p>
-              Sebanyak 100+ siswa yang mendaftar setiap tahunnya menunjukan kredibilitas pelayanan yang diberikan.
-            </p>
-            <p>Saat ini Auto Mitsuda memiliki 5 Instruktur berpengalaman serta bersertifikasi yang siap menemani dalam
-              setiap sesi pembelajaran. sehingga kami menyediakan pelayanan yang berkualitas dengan harga yang
-              terjangkau.
-            </p>
-          </div>
-          <a href="#kelas-kursus"
-             class="btn btn-primary"
-             style="margin-right: 1rem;">Lihat Kelas</a>
+        <div class="btn-tentang">
+          <button class="btn btn-primary"
+                  onclick="location.href='#kelas-kursus'">Lihat Kelas</button>
           <button class="btn btn-outline"
                   type="button"
                   onclick="location.href='https:/wa.me/085155448156?text=Halo%20saya%20ingin%20mengetahui%20info%20lebih%20lanjut%20tentang%20kursus%20di%20Auto%20Mitsuda'">
@@ -186,12 +183,12 @@
   <section class="container-fluid kursus-section"
            id="kelas-kursus">
     <h1 class="section-title-kursus">Kelas Kursus</h1>
-    <div class="row d-flex justify-content-center">
+    <div class="row d-flex justify-content-center kursus-container">
       <div class="col-md-4">
         <img src="/assets/Left-photo.png"
-             alt="" />
+             class="kursus-img" />
       </div>
-      <div class="col-md-4 kursus-content d-flex flex-column align-self-center">
+      <div class="col-md-4 kursus-content d-flex flex-column align-self-center kursus-text">
         <h3>Kelas Matic</h3>
         <p>
           Ditujukan untuk siswa yang ingin belajar mengendarai mobil dengan mudah tanpa harus memikirkan transimisi gigi
@@ -208,74 +205,74 @@
         </button>
 
         <!-- Modal -->
-        <div class="modal fade"
-             id="exampleModal"
-             tabindex="-1"
-             aria-labelledby="exampleModalLabel"
-             aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title text-center"
-                    id="exampleModalLabel">
-                  Kelas Matic
-                </h5>
-                <button type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <p>Berikut adalah rincian biaya untuk <span style="font-weight: bold;">Kelas Matic</span>: </p>
-                <table border="1">
-                  <tbody>
-                    <tr>
-                      <td>PAKET</td>
-                      <td>BIAYA</td>
-                    </tr>
-                    <tr>
-                      <td>4 JAM</td>
-                      <td>Rp. 600.000</td>
-                    </tr>
-                    <tr>
-                      <td>6 JAM</td>
-                      <td>Rp. 900.000</td>
-                    </tr>
-                    <tr>
-                      <td>8 JAM</td>
-                      <td>Rp. 1.200.000</td>
-                    </tr>
-                    <tr>
-                      <td>10 JAM</td>
-                      <td>Rp. 1.500.000</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="modal-footer">
-                <table border="1">
-                  <tbody>
-                    <tr>
-                      <td>&nbsp;JAM BELAJAR</td>
-                    </tr>
-                    <tr>
-                      <td>&nbsp;08.00 &ndash; 10.00</td>
-                    </tr>
-                    <tr>
-                      <td>&nbsp;10.00 &ndash; 12.00</td>
-                    </tr>
-                    <tr>
-                      <td>&nbsp;13.00 &ndash; 15.00</td>
-                    </tr>
-                    <tr>
-                      <td>&nbsp;15.00 &ndash; 17.00</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <button type="button"
-                        class="btn btn-primary">Hubungi Kami</button>
-              </div>
-            </div>
+      </div>
+    </div>
+    <div class="modal fade"
+         id="exampleModal"
+         tabindex="-1"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-center"
+                id="exampleModalLabel">
+              Kelas Matic
+            </h5>
+            <button type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Berikut adalah rincian biaya untuk <span style="font-weight: bold;">Kelas Matic</span>: </p>
+            <table border="1">
+              <tbody>
+                <tr>
+                  <td>PAKET</td>
+                  <td>BIAYA</td>
+                </tr>
+                <tr>
+                  <td>4 JAM</td>
+                  <td>Rp. 600.000</td>
+                </tr>
+                <tr>
+                  <td>6 JAM</td>
+                  <td>Rp. 900.000</td>
+                </tr>
+                <tr>
+                  <td>8 JAM</td>
+                  <td>Rp. 1.200.000</td>
+                </tr>
+                <tr>
+                  <td>10 JAM</td>
+                  <td>Rp. 1.500.000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <table border="1">
+              <tbody>
+                <tr>
+                  <td>&nbsp;JAM BELAJAR</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;08.00 &ndash; 10.00</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;10.00 &ndash; 12.00</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;13.00 &ndash; 15.00</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;15.00 &ndash; 17.00</td>
+                </tr>
+              </tbody>
+            </table>
+            <button type="button"
+                    class="btn btn-primary">Hubungi Kami</button>
           </div>
         </div>
       </div>
@@ -296,7 +293,9 @@
       <div class="col-md-4"
            style="padding-left: 2px">
         <img src="/assets/right-photo.png"
-             alt="" />
+             alt=""
+             /
+             class="kursus-img">
       </div>
     </div>
   </section>
@@ -540,7 +539,8 @@
           nav: false
         },
         600: {
-          items: 2
+          nav: false,
+          items: 1
         },
         1000: {
           items: 3

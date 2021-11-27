@@ -152,14 +152,17 @@ body {
 
 // About Section
 .about_container {
-
   .about_section {
     background-color: $color-third;
-    margin: 0 95px;
+    padding: 3rem;
 
     .mask_section {
+      @media screen and (max-width: 576px) {
+        display: none;
+      }
+
       .mask_image {
-        margin: 92px 62px 88px 90px;
+
 
         img {
           width: 100%;
@@ -169,22 +172,52 @@ body {
       }
     }
 
+    .col-8 {
+      @media screen and (max-width: 576px) {
+        width: 100%;
+
+        h1 {
+          font-size: 2rem;
+          text-align: center;
+        }
+
+        .btn-tentang {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+
+          button {
+            margin: 10px 0;
+          }
+        }
+      }
+
+    }
+
     h1 {
       color: $color-secondary;
       font-weight: bold;
-      font-size: 48px;
-      line-height: 72px;
+      font-size: 3rem;
+      line-height: 1.5;
+
+      @media screen and (max-width: 576px) {
+        font-size: 2.5rem;
+      }
     }
+
 
     .about_text {
       color: white;
 
       p {
         margin: 25px 90px 40px 0;
-        word-wrap: break-word;
         font-size: 1rem;
-      }
 
+        @media screen and (max-width: 576px) {
+          margin: 1rem auto;
+          text-align: center;
+        }
+      }
     }
   }
 }
@@ -193,6 +226,31 @@ body {
 
 // Kursus Section
 .kursus-section {
+  @media screen and (max-width: 576px) {
+    .kursus-container {
+      position: relative;
+      color: white;
+    }
+
+    .kursus-img {
+      width: 94vw;
+      height: 50vh;
+    }
+
+    .kursus-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      h3 {
+        font-size: 1rem;
+      }
+    }
+  }
+
+
+
   .section-title-kursus {
     margin-top: 6.25rem;
     margin-bottom: 6.25rem;
