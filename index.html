@@ -23,6 +23,19 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <link rel="stylesheet"
         href="/css/style.css" />
+  <link rel="apple-touch-icon"
+        sizes="180x180"
+        href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="assets/favicon/favicon-32x32.png">
+  <link rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest"
+        href="assets/favicon/site.webmanifest">
   <title>Belajar Kursus Mobil dan Pembuatan SIM A SIM C | Auto Mitsuda</title>
 </head>
 
@@ -188,7 +201,7 @@
         <img src="/assets/Left-photo.png"
              class="kursus-img" />
       </div>
-      <div class="col-md-4 kursus-content d-flex flex-column align-self-center kursus-text">
+      <div class="col-md-4 kursus-content d-flex flex-column align-self-center">
         <h3>Kelas Matic</h3>
         <p>
           Ditujukan untuk siswa yang ingin belajar mengendarai mobil dengan mudah tanpa harus memikirkan transimisi gigi
@@ -200,15 +213,14 @@
         <button type="button"
                 class="btn btn-primary"
                 data-bs-toggle="modal"
-                data-bs-target="#exampleModal">
+                data-bs-target="#kursus-matic">
           Lihat Biaya Kelas
         </button>
-
-        <!-- Modal -->
       </div>
     </div>
+    <!-- Modal -->
     <div class="modal fade"
-         id="exampleModal"
+         id="kursus-matic"
          tabindex="-1"
          aria-labelledby="exampleModalLabel"
          aria-hidden="true">
@@ -279,8 +291,15 @@
     </div>
 
     <!-- Right Content -->
-    <div class="row d-flex justify-content-center">
-      <div class="col-md-4 kursus-content d-flex flex-column align-self-center">
+    <div class="row d-flex justify-content-center kursus-container">
+      <div class="col-md-4"
+           style="padding-left: 2px"
+           id="image-order">
+        <img src="/assets/right-photo.png"
+             class="kursus-img">
+      </div>
+      <div class="col-md-4 kursus-content d-flex flex-column align-self-center"
+           id="text-order">
         <h3>Kelas Manual</h3>
         <p>Manual transimisi ditujukan bagi siswa yang sudah pernah mengendarai mobil sebelumnya dan ingin memperlancar
           kemampuan, namun kelas ini juga cocok untuk pemula yang ingin belajar mengendarai dasar mobil menggunakan
@@ -289,13 +308,6 @@
         </p>
         <button type="button"
                 class="btn btn-primary">Lihat Biaya Kelas</button>
-      </div>
-      <div class="col-md-4"
-           style="padding-left: 2px">
-        <img src="/assets/right-photo.png"
-             alt=""
-             /
-             class="kursus-img">
       </div>
     </div>
   </section>
@@ -309,7 +321,7 @@
         kursus kami.
       </p>
     </div>
-    <div class="container d-grid gap-2 col-6 mx-auto">
+    <div class="container d-grid gap-2 col-6 mx-auto btn-grup">
       <button class="btn btn-primary btn-wa"
               type="button"><i class="fab fa-whatsapp"></i> Whatsapp</button>
       <button class="btn btn-primary"
@@ -322,7 +334,7 @@
   <section class="container testimony_section">
     <div class="testimony_text text-center">
       <h1>Customer Review</h1>
-      <p>Kata mereka yang telah kursus di Auto Mitsuda</p>
+      <p>Kata mereka yang kursus di Auto Mitsuda</p>
     </div>
     <div class="row">
       <div class="card_section owl-carousel owl-theme"
@@ -446,77 +458,75 @@
   <!-- Footer Section -->
   <section class="container-fluid footer_section">
     <div class="container">
-      <div class="footer_content">
-        <div class="row">
-          <div class="col-4">
-            <div class="footer_title">
-              <h1>AUTO MITSUDA</h1>
-              <p>
-                Auto mitsuda adalah tempat kursus mobil yang diperuntukan untuk siswa pemula maupun yang ingin
-                memperlancar dan juga dilatih oleh instruktur yang mahir dan bersertifikat.
-              </p>
-            </div>
-            <div class="footer_maps">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.019125249957!2d106.9151349152944!3d-6.128128361793756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a20015a909713%3A0xd3813cfec29cd0aa!2sAuto%20Mitsuda!5e0!3m2!1sid!2sid!4v1637752655300!5m2!1sid!2sid"
-                      width="330"
-                      height="200"
-                      style="border: 0"
-                      allowfullscreen=""
-                      loading="lazy"></iframe>
-            </div>
+      <div class="footer_content row">
+        <div class="col-4 footer-about">
+          <div class="footer_title">
+            <h1>AUTO MITSUDA</h1>
+            <p>
+              Auto mitsuda adalah tempat kursus mobil yang diperuntukan untuk siswa pemula maupun yang ingin
+              memperlancar dan juga dilatih oleh instruktur yang mahir dan bersertifikat.
+            </p>
           </div>
-          <div class="col-4">
-            <div class="footer_navigasi">
-              <h3>Navigasi</h3>
-              <a href="#">
-                <li>Beranda</li>
-              </a>
-              <a href="#tentang-kami">
-                <li>Tentang Kami</li>
-              </a>
-              <a href="#">
-                <li>Kelas Kursus</li>
-              </a>
-              <a href="#">
-                <li>Customer Review</li>
-              </a>
-              <a href="#">
-                <li>Daftar Kursus</li>
-              </a>
-              <a href="#">
-                <li>Syarat & Ketentuan</li>
-              </a>
-            </div>
+          <div class="footer_maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.019125249957!2d106.9151349152944!3d-6.128128361793756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a20015a909713%3A0xd3813cfec29cd0aa!2sAuto%20Mitsuda!5e0!3m2!1sid!2sid!4v1637752655300!5m2!1sid!2sid"
+                    width="330"
+                    height="200"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"></iframe>
           </div>
-          <div class="col-4">
-            <div class="footer_contact text-center">
-              <h3>Alamat dan Kontak Kantor</h3>
-              <p>
-                Jl. Kramat Jaya No.1 (seberang kanan ramayana semper), Koja,
-                Jakarta Utara. 0851-5544-8156 (Barra)
-              </p>
-              <p>
-                Jl. Bugis No.25 Kebon bawang, Jakarta Utara 0818-0410-5710
-                (Inggih)
-              </p>
-              <p>
-                Jl. Daan Mogot Komp. Ruko Permata 9H, Grogol Jakarta Barat.
-                021-5696-5677 021-9707-2297
-              </p>
-              <div class="logo_contact">
-                <a role="button"
-                   class="btn"
-                   href="">
-                  <img src="./assets/brandico_facebook-rect.png"
-                       alt="" />
-                </a>
-                <a role="button"
-                   class="btn"
-                   href="">
-                  <img src="./assets/akar-icons_instagram-fill.svg"
-                       alt="" />
-                </a>
-              </div>
+        </div>
+        <div class="col-4">
+          <div class="footer_navigasi">
+            <h3>Navigasi</h3>
+            <a href="#">
+              <li>Beranda</li>
+            </a>
+            <a href="#tentang-kami">
+              <li>Tentang Kami</li>
+            </a>
+            <a href="#">
+              <li>Kelas Kursus</li>
+            </a>
+            <a href="#">
+              <li>Customer Review</li>
+            </a>
+            <a href="#">
+              <li>Daftar Kursus</li>
+            </a>
+            <a href="#">
+              <li>Syarat & Ketentuan</li>
+            </a>
+          </div>
+        </div>
+        <div class="col-4 footer-alamat">
+          <div class="footer_contact text-center">
+            <h3>Alamat dan Kontak Kantor</h3>
+            <p>
+              Jl. Kramat Jaya No.1 (seberang kanan ramayana semper), Koja,
+              Jakarta Utara.
+              <br>0851-5544-8156 (Barra)
+            </p>
+            <p>
+              Jl. Bugis No.25 Kebon bawang, Jakarta Utara.
+              <br>0818-0410-5710
+              (Inggih)
+            </p>
+            <p>
+              Jl. Daan Mogot Komp. Ruko Permata 9H, Grogol Jakarta Barat.
+              <br>021-5696-5677 021-9707-2297
+            </p>
+            <div class="logo_contact">
+              <a role="button"
+                 class="btn"
+                 href="">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+              <a role="button"
+                 class="btn"
+                 href="">
+                <i class="fab fa-instagram"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -535,12 +545,14 @@
       items: 2,
       responsive: {
         0: {
-          items: 1,
-          nav: false
-        },
-        600: {
+          items: 2,
           nav: false,
-          items: 1
+          margin: 300,
+        },
+        500: {
+          nav: false,
+          items: 2,
+          margin: 230,
         },
         1000: {
           items: 3
