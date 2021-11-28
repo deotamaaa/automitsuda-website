@@ -7,6 +7,7 @@
         content="IE=edge" />
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0" />
+  <!-- Library and Imports -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
         rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
@@ -16,9 +17,9 @@
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
         crossorigin="anonymous" />
   <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
   <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <link rel="stylesheet"
@@ -36,12 +37,44 @@
         href="assets/favicon/favicon-16x16.png">
   <link rel="manifest"
         href="assets/favicon/site.webmanifest">
-  <title>Belajar Kursus Mobil dan Pembuatan SIM A SIM C | Auto Mitsuda</title>
+  <!-- End of Library -->
+
+  <!-- Primary Meta Tags -->
+  <title>Belajar Kursus Mobil dan Pembuatan SIM A SIM C | AUTO MITSUDA</title>
+  <meta name="title"
+        content="Belajar Kursus Mobil dan Pembuatan SIM A SIM C | AUTO MITSUDA">
+  <meta name="description"
+        content="Belajar kursus stir mobil Jakarta Utara. Belajar Mobil Matic, Manual, serta pembuatan SIM A SIM C. Murah dan Terjangkau.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type"
+        content="website">
+  <meta property="og:url"
+        content="https://metatags.io/">
+  <meta property="og:title"
+        content="Belajar Kursus Mobil dan Pembuatan SIM A SIM C | AUTO MITSUDA">
+  <meta property="og:description"
+        content="Belajar kursus stir mobil Jakarta Utara. Belajar Mobil Matic, Manual, serta pembuatan SIM A SIM C. Murah dan Terjangkau.">
+  <meta property="og:image"
+        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card"
+        content="summary_large_image">
+  <meta property="twitter:url"
+        content="https://metatags.io/">
+  <meta property="twitter:title"
+        content="Belajar Kursus Mobil dan Pembuatan SIM A SIM C | AUTO MITSUDA">
+  <meta property="twitter:description"
+        content="Belajar kursus stir mobil Jakarta Utara. Belajar Mobil Matic, Manual, serta pembuatan SIM A SIM C. Murah dan Terjangkau.">
+  <meta property="twitter:image"
+        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
 </head>
 
 <body>
   <!-- Hero Section -->
-  <section class="hero-section">
+  <section class="hero-section"
+           id="hero-section">
     <!-- Navigasi Section -->
     <nav class="navbar navbar-expand-lg navbar-dark py-4 mx-5"
          id="navbar">
@@ -71,11 +104,11 @@
             </li>
             <li class="nav-item">
               <a class="nav-link"
-                 href="#">Daftar Kursus</a>
+                 href="#daftar-section">Daftar Kursus</a>
             </li>
             <li class="nav-item">
               <a class="nav-link"
-                 href="#">Testimonial</a>
+                 href="#testi-section">Testimonial</a>
             </li>
           </ul>
           <button class="btn btn-primary"
@@ -154,7 +187,7 @@
 
   <!-- End Of Strength-Section-->
   <!-- About Section -->
-  <section class="container-fluid about_container"
+  <section class="container-sm about_container"
            id="tentang-kami">
     <div class="about_section row">
       <div class="col-4 mask_section">
@@ -183,7 +216,7 @@
           <button class="btn btn-outline"
                   type="button"
                   onclick="location.href='https:/wa.me/085155448156?text=Halo%20saya%20ingin%20mengetahui%20info%20lebih%20lanjut%20tentang%20kursus%20di%20Auto%20Mitsuda'">
-            Hubungi Kami
+            Chat Kami
           </button>
         </div>
       </div>
@@ -240,7 +273,7 @@
             <p>Berikut adalah rincian biaya untuk <span style="font-weight: bold;">Kelas Matic</span>: </p>
             <table border="1">
               <tbody>
-                <tr>
+                <tr class="table-heading">
                   <td>PAKET</td>
                   <td>BIAYA</td>
                 </tr>
@@ -266,7 +299,8 @@
           <div class="modal-footer">
             <table border="1">
               <tbody>
-                <tr>
+                Berikut adalah jam belajar dan biaya pembuatan SIM:
+                <tr class="table-heading">
                   <td>&nbsp;JAM BELAJAR</td>
                 </tr>
                 <tr>
@@ -283,8 +317,15 @@
                 </tr>
               </tbody>
             </table>
+            <table border="1">
+              <tr>
+                <td>SIM A / C</td>
+                <td>Rp. 850.000</td>
+              </tr>
+            </table>
             <button type="button"
-                    class="btn btn-primary">Hubungi Kami</button>
+                    class="btn btn-primary"
+                    onclick="location.href='tel:085155448156' ">Hubungi Kami</button>
           </div>
         </div>
       </div>
@@ -307,10 +348,122 @@
           manual.
         </p>
         <button type="button"
-                class="btn btn-primary">Lihat Biaya Kelas</button>
+                class="btn btn-primary"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#kursus-manual">Lihat Biaya Kelas</button>
+      </div>
+    </div>
+    <div class="modal fade"
+         id="kursus-manual"
+         tabindex="-1"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-center"
+                id="exampleModalLabel">
+              Kelas Manual
+            </h5>
+            <button type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Berikut adalah rincian biaya untuk <span style="font-weight: bold;">Kelas Manual</span>: </p>
+            <table border="1">
+              <tbody>
+                <tr class="table-heading">
+                  <td>Program </td>
+                  <td>Paket</td>
+                  <td>BIAYA</td>
+                </tr>
+                <tr>
+                  <td>Memperlancar</td>
+                  <td>6 JAM</td>
+                  <td>Rp. 588.000</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>8 JAM</td>
+                  <td>Rp. 784.000</td>
+                </tr>
+              </tbody>
+            </table>
+            <table border="1">
+              <tbody>
+                <tr class="table-heading">
+                  <td>Program</td>
+                  <td>PAKET</td>
+                  <td>BIAYA</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>10 JAM</td>
+                  <td>Rp. 931.000</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>12 JAM</td>
+                  <td>Rp. 1.117.000</td>
+                </tr>
+                <tr>
+                  <td>Belajar Dasar</td>
+                  <td>14 JAM</td>
+                  <td>Rp. 1.234.000</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>16 JAM</td>
+                  <td>Rp. 1.411.000</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>20 JAM</td>
+                  <td>Rp. 1.764.000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <table border="1">
+              <tbody>
+                Berikut adalah jam belajar dan biaya pembuatan SIM:
+                <tr class="table-heading">
+                  <td>&nbsp;JAM BELAJAR</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;08.00 &ndash; 10.00</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;10.00 &ndash; 12.00</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;13.00 &ndash; 15.00</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;15.00 &ndash; 17.00</td>
+                </tr>
+              </tbody>
+            </table>
+            <table border="1">
+              <tr>
+                <td>SIM A / C</td>
+                <td>Rp. 850.000</td>
+              </tr>
+            </table>
+            <button type="button"
+                    class="btn btn-primary"
+                    onclick="location.href='tel:085155448156' ">Hubungi Kami
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+
   <!-- Daftar Section -->
   <section class="daftar-section"
            id="daftar-section">
@@ -323,9 +476,13 @@
     </div>
     <div class="container d-grid gap-2 col-6 mx-auto btn-grup">
       <button class="btn btn-primary btn-wa"
-              type="button"><i class="fab fa-whatsapp"></i> Whatsapp</button>
+              type="button"
+              onclick="location.href='https:/wa.me/085155448156?text=Halo%20saya%20ingin%20mengetahui%20info%20lebih%20lanjut%20tentang%20kursus%20di%20Auto%20Mitsuda'">
+        <i class="fab fa-whatsapp"></i> Whatsapp</button>
       <button class="btn btn-primary"
-              type="button"><i class="fas fa-phone"></i> Via Telfon</button>
+              type="button"
+              onclick="location.href='tel:085155448156' ">
+        <i class="fas fa-phone"></i> Via Telfon</button>
     </div>
   </section>
   <!-- End of Daftar Section -->
@@ -456,7 +613,8 @@
   </section>
 
   <!-- Footer Section -->
-  <section class="container-fluid footer_section">
+  <section class="container-fluid footer_section"
+           id="testi-section">
     <div class="container">
       <div class="footer_content row">
         <div class="col-4 footer-about">
@@ -479,24 +637,66 @@
         <div class="col-4">
           <div class="footer_navigasi">
             <h3>Navigasi</h3>
-            <a href="#">
+            <a href="#hero-section">
               <li>Beranda</li>
             </a>
             <a href="#tentang-kami">
               <li>Tentang Kami</li>
             </a>
-            <a href="#">
+            <a href="#kelas-kursus">
               <li>Kelas Kursus</li>
             </a>
-            <a href="#">
-              <li>Customer Review</li>
-            </a>
-            <a href="#">
+            <a href="#daftar-section">
               <li>Daftar Kursus</li>
             </a>
-            <a href="#">
+            <a href="#"
+               type="button"
+               data-bs-target="#tnc-toggle"
+               data-bs-toggle="modal">
               <li>Syarat & Ketentuan</li>
             </a>
+            <div class="modal fade"
+                 id="tnc-toggle"
+                 data-bs-backdrop="static"
+                 data-bs-keyboard="false"
+                 tabindex="-1"
+                 aria-labelledby="staticBackdropLabel"
+                 aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title"
+                        id="staticBackdropLabel"
+                        style="color: black;">Syarat dan Ketentuan</h5>
+                  </div>
+                  <div class="modal-body"
+                       style="color: black; text-align: start;">
+                    <p style="font-weight: bold;">Syarat Pendaftaran</p>
+                    <ol>
+                      <li>Mengisi formulir pendaftaran</li>
+                      <li>Membayar biaya pendaftaran (Rp. 30.000)</li>
+                      <li>Membayar biaya pendidikan</li>
+                    </ol>
+                    <hr>
+                    <ul>
+                      <li>Jadwal kursus harus diselesaikan paling lambat dalam waktu 2 Bulan . Terhitung dari tanggal
+                        masuk yang tertera pada kwitansi, selewatnya kursus dianggap Selesai. </li>
+                      <li>Siswa yang tidak masuk harus memberitahukan 1 hari sebelumnya, tanpa pemberitahuan dianggap
+                        belajar.</li>
+                      <li>Apabila siswa terlambat hadir dari jadwal yang telah ditentukan, maka dianggap belajar.
+                        Namun apabila kendaraan belajar yang terlambat hadir, maka waktu belajar ditambah sebesar
+                        keterlambatan. </li>
+                      <li>Selama belajar tidak diperkenankan membawa istri, suami, anak ataupun teman.</li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button"
+                            class="btn btn-primary"
+                            data-bs-dismiss="modal">Saya Paham dan Menerima</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-4 footer-alamat">
